@@ -56,11 +56,17 @@ class TicTacToe
     result = nil
     WIN_COMBINATIONS.each do |win_combo|
       win = win_combo.all?{|index| @board[index] == "X"}
+<<<<<<< HEAD
       win ? result = win_combo : result
+=======
+      win ? result = win_combo : result = false
+
+>>>>>>> 95fe1ac36f9a7bab9f43a91a984b1cca10e29f5f
     end
 
     WIN_COMBINATIONS.each do |win_combo|
       win = win_combo.all?{|index| @board[index] == "O"}
+<<<<<<< HEAD
       win ? result = win_combo : result
     end
   result
@@ -91,4 +97,13 @@ class TicTacToe
     won? ? message = "Congratulations #{winner}!" : message = "Cat\'s Game!"
     puts message
   end
+=======
+      win ? result = win_combo : result = false
+    end
+
+  result
+
+  end
+
+>>>>>>> 95fe1ac36f9a7bab9f43a91a984b1cca10e29f5f
 end
